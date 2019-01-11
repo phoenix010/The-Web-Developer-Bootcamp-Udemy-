@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+	<h1>Login</h1>
+
+	<!-- action: where the form send the data to -->
+	<!-- method: what HTTP method (get/post/put) -->
+	<!-- form is a block level element -->
+	<!-- "required attribute does the field validation in HTML5" -->
+	<form>
+		<label>Email:<input name = "Email" type="Email" placeholder="Email" required=""></label>
+		<label>Password:<input name= "password" type="password" placeholder="password" required></label>
+		<input type="submit">
+	</form>
+	<h2>Alternate Sybtax for creating labels in forms:</h2>
+	<form>
+		<!-- the value of "for" attribute and "id" attribute sgould be same -->
+		<label for="Email">Email
+		</label>
+		<input id= "Email" type="Email" placeholder="Email" required>
+		<label for="Password">password
+		</label>
+		<input id= "Password" type="text" placeholder="Password" required>
+		<input type="submit">		
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- radio buttons -->
+<!-- select tag -->
+<!-- textarea tag -->
+
+<!-- name, value and id attribute are bit confusing -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Demo</title>
+</head>
+<body>
+	<p>Do you prefer dogs or cats?</p>
+	<form>
+		<label for="dogs">DOGS:</label>
+		<input type="radio" name="petChoice" id = "dogs" value="DOGS">
+
+		<label for="cats">CATS:</label>
+		<input type="radio" name="petChoice" id = "cats" value="CATS">
+		<!-- name attribute is required so that html5 can identify that tag and send it as a query parameter in the URL -->
+
+		<select name = "color">
+			<option value = "redcolor">Red</option>
+			<option value = "yellowcolor">Yellow</option>
+			<option value = "greencolor">Green</option>
+		</select>
+
+		<textarea name = "textarea" rows="10" cols="10" placeholder="Write your bio"></textarea>
+		<input type="submit">
+	</form>
+
+</body>
+</html>
